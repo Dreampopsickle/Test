@@ -6,15 +6,15 @@
 //     });
 //   });
 document.addEventListener('DOMContentLoaded', function() {
-  var body = document.querySelector('body');
+  const body = document.querySelector('body');
   body.addEventListener('click', function() {
-    var randomColor = generateRandomColor();
+    let randomColor = generateRandomColor();
     body.style.backgroundColor = randomColor;
   });
 
   function generateRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
+    let letters = '0123456789ABCDEF';
+    let color = '#';
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
